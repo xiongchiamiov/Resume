@@ -8,6 +8,12 @@
 \documentclass[margin,line]{resume}
 
 \usepackage{graphicx}
+% This is necessary for the nicely-formatted tilde.
+% https://tex.stackexchange.com/q/312/3713
+\usepackage{textcomp}
+% This is necessary for the right arrow.  I tried using XeLaTeX but couldn't get that to work.
+% https://tex.stackexchange.com/a/34608/3713
+\usepackage[utf8]{inputenc}
 
 \begin{document}
 
@@ -36,11 +42,13 @@
     \section{\mysidestyle \textbf{\large{P}\small{ROFESSIONAL} \large{E}\small{XPERIENCE}}}
 
     % Winnie
-    \textbf{\listing Winnie} \vspace{2mm}\\\vspace{1mm}%
+    \textbf{\listing Winnie} \hfill {\fontfamily{ptm}\selectfont\texttildelow}12 engineers
+    \vspace{2mm}\\\vspace{1mm}%
     \textsl{Staff Site Reliability Engineer} \hfill \textbf{February 2022 -- current}\\
     
     % WePay
-    \textbf{\listing WePay (JPMorgan Chase)} \vspace{2mm}\\\vspace{1mm}%
+    \textbf{\listing WePay (acquired by JPMorgan Chase)} \hfill {\fontfamily{ptm}\selectfont\texttildelow}80→200 engineers
+    \vspace{2mm}\\\vspace{1mm}%
     \textsl{Sr Staff Site Reliability Engineer} \hfill \textbf{May 2021 -- February 2022}\\
     Identify and address org-wide technology, process, and people problems. Recognize common origins from different problems and extract them into strategic projects. Sponsor under-leveled engineers. Serve at the pleasure of the Senior Director of DevOps.\\
     \textsl{Manager, Embedded Site Reliability Engineering} \hfill \textbf{March 2020 -- May 2021}\\
@@ -49,13 +57,15 @@
     Embed within an application team to provide a close reliability partner.
 
     % Zoox
-    \textbf{\listing Zoox} \vspace{2mm}\\\vspace{1mm}%
+    \textbf{\listing Zoox} \hfill {\fontfamily{ptm}\selectfont\texttildelow}80 engineers
+    \vspace{2mm}\\\vspace{1mm}%
     \textsl{DevOps Engineer} \hfill \textbf{December 2015 -- February 2017}\\
     Introduce operations practices and tools into a rapidly growing autonomous vehicle company.
     Work on a wide range of tasks, including web development (Flask, Pyramid, custom C++, custom Python), build systems (Bazel), an in-house deploy application, operations for several dozen applications, network security, AWS user support, software documentation, and organization-wide standards.
 
     % reddit
-    \textbf{\listing reddit} \vspace{2mm}\\\vspace{1mm}%
+    \textbf{\listing reddit} \hfill {\fontfamily{ptm}\selectfont\texttildelow}20 engineers
+    \vspace{2mm}\\\vspace{1mm}%
     \textsl{Software Engineer} \hfill \textbf{August 2014 -- December 2015}\\
     One of half a dozen engineers responsible for user-facing features on reddit.com, a site with over 200 million monthly active users.
     Fixed many bugs and annoyances that had been present for years.
@@ -65,7 +75,8 @@
     Most work available for perusal at https://github.com/reddit-archive/reddit/commits?author=xiongchiamiov .
 
     % iFixit
-    \textbf{\listing iFixit} \vspace{2mm}\\\vspace{1mm}%
+    \textbf{\listing iFixit} \hfill {\fontfamily{ptm}\selectfont\texttildelow}12 engineers
+    \vspace{2mm}\\\vspace{1mm}%
     \textsl{Web Operations Lead Engineer} \hfill \textbf{June 2012 -- August 2014}\\
     \textsl{DevOps Engineering Intern} \hfill \textbf{March 2011 -- June 2012}\\
     Implemented caching system that prevents previously-frequent media-induced downtimes.
